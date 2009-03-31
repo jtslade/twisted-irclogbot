@@ -18,12 +18,12 @@ the bot will reply:
 
   <potato-log-bot> brainspot: I am a potato log bot that logs the messages on this channel to a file.
 
-Run this script with two arguments, the channel name the bot should
-connect to, and file to log to, e.g.:
+Run this script with two arguments, the channel name the bot should connect to, and his nickname.
 
-  $ python logbot.py digitaleternal logs/digitaleternal.log
+  $ python logbot.py eternalzone ClerkKent
 
-will log channel #eternalzone to the file 'eternalzone.log' in the logs directory.
+will log channel #eternalzone to the file 'logs/eternalzone.log' with the bot's nick 
+name set to ClerkKent.
 
 Configure server and bot nickname settings in settings.py. Refer to settings.py.sample.
 """
@@ -59,9 +59,9 @@ class LogBot(irc.IRCClient):
     """A logging IRC bot."""
     
     import settings
-    nickname = settings.BOT_NICKNAME
     
     def connectionMade(self):
+        self.nickname = self.factory.nickname
         irc.IRCClient.connectionMade(self)
         self.logger = MessageLogger(open(self.factory.filename, "a"))
         self.logger.log("[connected at %s]" % 
@@ -124,9 +124,10 @@ class LogBotFactory(protocol.ClientFactory):
     # the class of the protocol to build when new connection is made
     protocol = LogBot
 
-    def __init__(self, channel, filename):
+    def __init__(self, channel, filename, nickname):
         self.channel = channel
         self.filename = filename
+        self.nickname = nickname
 
     def clientConnectionLost(self, connector, reason):
         """If we get disconnected, reconnect to server."""
@@ -142,8 +143,8 @@ if __name__ == '__main__':
     log.startLogging(sys.stdout)
     
     # create factory protocol and application
-    f = LogBotFactory(sys.argv[1], sys.argv[2])
-
+    f = LogBotFactory(sys.argv[1], "logs/%s.txt" % sys.argv[1], sys.argv[2])
+    
     # connect factory to this host and port
     import settings
     reactor.connectTCP(settings.SERVER, settings.PORT, f)
