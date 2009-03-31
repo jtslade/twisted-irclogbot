@@ -25,7 +25,7 @@ connect to, and file to log to, e.g.:
 
 will log channel #eternalzone to the file 'eternalzone.log' in the logs directory.
 
-Configure server and bot nickname settings in settings.py.
+Configure server and bot nickname settings in settings.py. Refer to settings.py.sample.
 """
 
 
