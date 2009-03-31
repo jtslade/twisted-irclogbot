@@ -1,0 +1,35 @@
+[13:13:42] [connected at Tue Mar 31 13:13:42 2009]
+[13:13:42] <> *** Looking up your hostname...
+[13:13:42] <> *** Checking ident
+[13:13:42] <> *** No identd (auth) response
+[13:13:43] <> *** Found your hostname
+[13:13:43] <> *** Your host is localhost.[localhost./6667], running version dancer-ircd-1.0.36
+[13:13:43] [I have joined #eternalzone]
+[13:13:55] [disconnected at Tue Mar 31 13:13:55 2009]
+[13:14:24] [connected at Tue Mar 31 13:14:24 2009]
+[13:14:25] <> *** Looking up your hostname...
+[13:14:25] <> *** Found your hostname, welcome back
+[13:14:25] <> *** Checking ident
+[13:14:25] <> *** No identd (auth) response
+[13:14:25] <> *** Your host is localhost.[localhost./6667], running version dancer-ircd-1.0.36
+[13:14:25] [I have joined #eternalzone]
+[13:14:31] <brainspot> potato-log-bot: Hi!
+[13:14:31] <potato-log-bot> brainspot: I am a log bot
+[13:14:52] [disconnected at Tue Mar 31 13:14:52 2009]
+[13:14:54] [connected at Tue Mar 31 13:14:54 2009]
+[13:14:54] <> *** Looking up your hostname...
+[13:14:54] <> *** Found your hostname, welcome back
+[13:14:54] <> *** Checking ident
+[13:14:54] <> *** No identd (auth) response
+[13:14:54] <> *** Your host is localhost.[localhost./6667], running version dancer-ircd-1.0.36
+[13:14:55] [I have joined #eternalzone]
+[13:14:59] <brainspot> potato-log-bot: Yo!
+[13:14:59] <potato-log-bot> brainspot: I am a potato log bot that logs the messages on this channel to a file.
+[13:15:27] <Tezra> potato-log-bot: who are you?
+[13:15:27] <potato-log-bot> Tezra: I am a potato log bot that logs the messages on this channel to a file.
+[13:15:34] <Tezra> potato-log-bot: do you rest?
+[13:15:34] <potato-log-bot> Tezra: I am a potato log bot that logs the messages on this channel to a file.
+[13:15:37] <brainspot> yo
+[13:15:54] <Tezra> hello
+[13:16:01] <JJ> lol
+[13:16:05] [disconnected at Tue Mar 31 13:16:05 2009]
